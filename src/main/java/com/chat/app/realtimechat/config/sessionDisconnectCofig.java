@@ -29,7 +29,6 @@ public class sessionDisconnectCofig {
             chatMessage message= chatMessage.builder()
                     .type(messageType.LEAVE)
                     .sender(username)
-                    .content("a user has left the conversation")
                     .build();
             messageTemplate.convertAndSend("/topic/public",message);
 
